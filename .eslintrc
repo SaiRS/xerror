@@ -1,0 +1,47 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "google",
+    "eslint-config-alloy/typescript",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "commonjs": true,
+    "es6": true
+  },
+  "rules": {
+    "semi": "error",
+    "valid-jsdoc": "error",
+    "no-undefined": "off",
+    "prettier/prettier": "error"
+  },
+  "settings": {},
+  "overrides": [],
+  "override": [
+    {
+      "files": "src/**/*.{ts,tsx}",
+      "parser": "@typescript-eslint/parser",
+      "plugins": [
+        "@typescript-eslint"
+      ],
+      "rules": {
+        "no-undef": "off",
+        "no-dupe-class-members": "off",
+        "complexity": "off",
+        "func-name-matching": "off"
+      }
+    }
+  ]
+}
