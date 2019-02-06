@@ -1,6 +1,6 @@
-import XError from '../index';
+import XXError from '../index';
 
 test('valid custom error type', () => {
-	let error = new XError('000');
+	let error = new XXError('000');
 	expect(error instanceof Error).toBe(true);
 });

@@ -1,6 +1,6 @@
 {
-  "name": "xerror",
-  "version": "1.0.0",
+  "name": "xxerror",
+  "version": "1.0.1",
   "description": "custom error",
   "main": "index.js",
   "scripts": {
@@ -27,15 +27,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SaiRS/xerror.git"
+    "url": "git+https://github.com/SaiRS/xxerror.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SaiRS/xerror/issues"
+    "url": "https://github.com/SaiRS/xxerror/issues"
   },
-  "homepage": "https://github.com/SaiRS/xerror#readme",
+  "homepage": "https://github.com/SaiRS/xxerror#readme",
   "dependencies": {
     "ts-node": "^8.0.1",
     "express": "^4.16.4",
