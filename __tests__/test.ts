@@ -1,4 +1,4 @@
-import XXError from '../index';
+import XXError from '../src';
 
 test('valid custom error type', () => {
 	let error = new XXError('000');
