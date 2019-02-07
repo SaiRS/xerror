@@ -16,7 +16,7 @@ class XXError extends XXErrorFunction {
 
 	constructor(message: string) {
 		super(message);
-		this.name = 'IFError';
+		this.name = 'XXError';
 	}
 }
 

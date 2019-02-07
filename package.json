@@ -1,8 +1,8 @@
 {
   "name": "xxerror",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "custom error",
-  "main": "index.js",
+  "main": "dist/xxerror.js",
   "scripts": {
     "test": "jest",
     "generate": "plop --plopfile generators/index.js",
@@ -23,13 +23,14 @@
     "format:staged": "pretty-quick --staged",
     "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
     "lint": "eslint **/*.js --quiet",
-    "lint-fix": "eslint --fix"
+    "lint-fix": "eslint --fix",
+    "build": "cross-env node scripts/build.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SaiRS/xxerror.git"
   },
-  "keywords": [],
+  "keywords": ["error"],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -49,22 +50,28 @@
     "typescript": "^3.2.4"
   },
   "devDependencies": {
-    "husky": "^0.14.3",
-    "babel-eslint": "^10.0.1",
-    "eslint-plugin-compat": "^2.6.3",
-    "shelljs": "^0.8.3",
-    "jest": "^24.0.0",
-    "prettier": "^1.16.0",
-    "pretty-quick": "^1.6.0",
-    "eslint": "^5.12.1",
-    "eslint-config-google": "^0.12.0",
-    "eslint-config-prettier": "^3.6.0",
-    "eslint-plugin-prettier": "^3.0.1",
+    "@types/jest": "^24.0.0",
     "@typescript-eslint/eslint-plugin": "^1.2.0",
     "@typescript-eslint/parser": "^1.2.0",
+    "babel-eslint": "^10.0.1",
+    "chalk": "^2.4.2",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.12.1",
     "eslint-config-alloy": "^1.4.2",
-    "@types/jest": "^24.0.0",
-    "ts-jest": "^23.10.5"
+    "eslint-config-google": "^0.12.0",
+    "eslint-config-prettier": "^3.6.0",
+    "eslint-plugin-compat": "^2.6.3",
+    "eslint-plugin-prettier": "^3.0.1",
+    "husky": "^0.14.3",
+    "jest": "^24.0.0",
+    "ora": "^3.0.0",
+    "prettier": "^1.16.0",
+    "pretty-quick": "^1.6.0",
+    "shelljs": "^0.8.3",
+    "ts-jest": "^23.10.5",
+    "ts-loader": "^5.3.3",
+    "webpack": "^4.29.2",
+    "webpack-cli": "^3.2.3"
   },
   "husky": {
     "hooks": {
